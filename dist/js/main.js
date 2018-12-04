@@ -4,6 +4,7 @@ const menu = document.querySelector(".menu");
 const menuBranding = document.querySelector(".menu-branding");
 const menuNav = document.querySelector(".menu-nav");
 const navItems = document.querySelectorAll(".nav-item");
+const current = document.querySelector(".current");
 
 //Set menu state
 let showMenu = false;
@@ -27,3 +28,4 @@ const toggleMenu = () => {
 };
 
 menuBtn.addEventListener("click", toggleMenu);
+current.addEventListener("click", toggleMenu);
